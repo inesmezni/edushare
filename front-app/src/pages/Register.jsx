@@ -25,7 +25,7 @@ const Register = () => {
     try {
       const response = await register(formData);
       loginUser(response.user, response.token);
-      toast.success('Inscription réussie ! Bienvenue 🎉');
+      toast.success('Inscription réussie ! Bienvenue ');
       navigate(formData.contributor ? '/dashboard/contributor' : '/dashboard');
     } catch (error) {
       toast.error(error.response?.data?.error || 'Erreur lors de l\'inscription');
@@ -85,7 +85,7 @@ const Register = () => {
                 <FiUser size={16} style={styles.inputIcon} />
                 <input
                   type="text"
-                  placeholder="Ines Mezni"
+                  placeholder="Votre nom complet"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   style={styles.input}

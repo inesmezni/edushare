@@ -57,7 +57,7 @@ const Login = () => {
 
         {/* Carte */}
         <div style={styles.card}>
-          <h1 style={styles.title}>Bon retour 👋</h1>
+          <h1 style={styles.title}>Bon retour </h1>
           <p style={styles.subtitle}>Connectez-vous à votre compte EduShare</p>
 
           {/* Toggle Admin/Utilisateur */}
